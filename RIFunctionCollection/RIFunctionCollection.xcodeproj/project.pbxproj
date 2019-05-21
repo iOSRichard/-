@@ -15,6 +15,12 @@
 		799BFDA322929EAE00FBFC4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDA222929EAE00FBFC4A /* main.m */; };
 		799BFDAD22929EAE00FBFC4A /* RIFunctionCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDAC22929EAE00FBFC4A /* RIFunctionCollectionTests.m */; };
 		799BFDB822929EAE00FBFC4A /* RIFunctionCollectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDB722929EAE00FBFC4A /* RIFunctionCollectionUITests.m */; };
+		799BFDC92292A5F700FBFC4A /* TabBarControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDC82292A5F700FBFC4A /* TabBarControllerOne.m */; };
+		799BFDCD2292B0B600FBFC4A /* MainViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDCC2292B0B600FBFC4A /* MainViewControllerOne.m */; };
+		799BFDD02292B34100FBFC4A /* MainViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDCF2292B34100FBFC4A /* MainViewControllerTwo.m */; };
+		799BFDD32292B38E00FBFC4A /* MainViewControllerThird.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD22292B38E00FBFC4A /* MainViewControllerThird.m */; };
+		799BFDD62292B3B600FBFC4A /* MainViewControllerFourth.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD52292B3B600FBFC4A /* MainViewControllerFourth.m */; };
+		799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		799BFDB322929EAE00FBFC4A /* RIFunctionCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RIFunctionCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		799BFDB722929EAE00FBFC4A /* RIFunctionCollectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIFunctionCollectionUITests.m; sourceTree = "<group>"; };
 		799BFDB922929EAE00FBFC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799BFDC72292A5F700FBFC4A /* TabBarControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerOne.h; sourceTree = "<group>"; };
+		799BFDC82292A5F700FBFC4A /* TabBarControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerOne.m; sourceTree = "<group>"; };
+		799BFDCB2292B0B600FBFC4A /* MainViewControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerOne.h; sourceTree = "<group>"; };
+		799BFDCC2292B0B600FBFC4A /* MainViewControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerOne.m; sourceTree = "<group>"; };
+		799BFDCE2292B34100FBFC4A /* MainViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerTwo.h; sourceTree = "<group>"; };
+		799BFDCF2292B34100FBFC4A /* MainViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTwo.m; sourceTree = "<group>"; };
+		799BFDD12292B38E00FBFC4A /* MainViewControllerThird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerThird.h; sourceTree = "<group>"; };
+		799BFDD22292B38E00FBFC4A /* MainViewControllerThird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerThird.m; sourceTree = "<group>"; };
+		799BFDD42292B3B600FBFC4A /* MainViewControllerFourth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerFourth.h; sourceTree = "<group>"; };
+		799BFDD52292B3B600FBFC4A /* MainViewControllerFourth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerFourth.m; sourceTree = "<group>"; };
+		799BFDD72292B79E00FBFC4A /* MainViewControllerFifth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerFifth.h; sourceTree = "<group>"; };
+		799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerFifth.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,8 @@
 		799BFD9222929EAC00FBFC4A /* RIFunctionCollection */ = {
 			isa = PBXGroup;
 			children = (
+				799BFDCA2292AF7400FBFC4A /* MainViewController */,
+				799BFDC62292A51400FBFC4A /* TabBarControllerGroup */,
 				799BFD9322929EAC00FBFC4A /* AppDelegate.h */,
 				799BFD9422929EAC00FBFC4A /* AppDelegate.m */,
 				799BFD9622929EAC00FBFC4A /* ViewController.h */,
@@ -130,6 +150,32 @@
 				799BFDB922929EAE00FBFC4A /* Info.plist */,
 			);
 			path = RIFunctionCollectionUITests;
+			sourceTree = "<group>";
+		};
+		799BFDC62292A51400FBFC4A /* TabBarControllerGroup */ = {
+			isa = PBXGroup;
+			children = (
+				799BFDC72292A5F700FBFC4A /* TabBarControllerOne.h */,
+				799BFDC82292A5F700FBFC4A /* TabBarControllerOne.m */,
+			);
+			path = TabBarControllerGroup;
+			sourceTree = "<group>";
+		};
+		799BFDCA2292AF7400FBFC4A /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				799BFDCB2292B0B600FBFC4A /* MainViewControllerOne.h */,
+				799BFDCC2292B0B600FBFC4A /* MainViewControllerOne.m */,
+				799BFDCE2292B34100FBFC4A /* MainViewControllerTwo.h */,
+				799BFDCF2292B34100FBFC4A /* MainViewControllerTwo.m */,
+				799BFDD12292B38E00FBFC4A /* MainViewControllerThird.h */,
+				799BFDD22292B38E00FBFC4A /* MainViewControllerThird.m */,
+				799BFDD42292B3B600FBFC4A /* MainViewControllerFourth.h */,
+				799BFDD52292B3B600FBFC4A /* MainViewControllerFourth.m */,
+				799BFDD72292B79E00FBFC4A /* MainViewControllerFifth.h */,
+				799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799BFDD02292B34100FBFC4A /* MainViewControllerTwo.m in Sources */,
+				799BFDD62292B3B600FBFC4A /* MainViewControllerFourth.m in Sources */,
 				799BFD9822929EAC00FBFC4A /* ViewController.m in Sources */,
+				799BFDD32292B38E00FBFC4A /* MainViewControllerThird.m in Sources */,
+				799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */,
 				799BFDA322929EAE00FBFC4A /* main.m in Sources */,
+				799BFDCD2292B0B600FBFC4A /* MainViewControllerOne.m in Sources */,
+				799BFDC92292A5F700FBFC4A /* TabBarControllerOne.m in Sources */,
 				799BFD9522929EAC00FBFC4A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

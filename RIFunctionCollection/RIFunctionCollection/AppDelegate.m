@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarControllerOne.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CGRect rect = [UIScreen mainScreen].bounds;
+    self.window = [[UIWindow alloc]initWithFrame:rect];
+    
+    TabBarControllerOne *oneTabBar = [[TabBarControllerOne alloc]init];
+    
+    [oneTabBar createTabBarOneType];
+    
+    self.window.rootViewController = oneTabBar;
+    
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 
