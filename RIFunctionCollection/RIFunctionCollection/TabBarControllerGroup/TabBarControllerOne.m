@@ -34,27 +34,32 @@
 - (void)createTabBarOneType{
     
     [self addViewControllerWithParams:@{@"className":@"MainViewControllerOne",
-                                        @"title":@"首页",
+                                        @"navigationTitle":@"MainOneVC",
+                                        @"tabBarTitle":@"首页",
                                         @"image":@"home_icon",
                                         @"selectedImage":@"homeselet_icon"}];
     
     [self addViewControllerWithParams:@{@"className":@"MainViewControllerTwo",
-                                        @"title":@"收入",
+                                        @"navigationTitle":@"MainTwoVC",
+                                        @"tabBarTitle":@"收入",
                                         @"image":@"salaryh_icon",
                                         @"selectedImage":@"salaryselet_icon"}];
     
     [self addViewControllerWithParams:@{@"className":@"MainViewControllerThird",
-                                        @"title":@"金融",
+                                        @"navigationTitle":@"MainThirdVC",
+                                        @"tabBarTitle":@"金融",
                                         @"image":@"financing_icon",
                                         @"selectedImage":@"financingselet_icon"}];
     
     [self addViewControllerWithParams:@{@"className":@"MainViewControllerFourth",
-                                        @"title":@"生活",
+                                        @"navigationTitle":@"MainFourthVC",
+                                        @"tabBarTitle":@"生活",
                                         @"image":@"live_icon",
                                         @"selectedImage":@"liveselet_icon"}];
     
     [self addViewControllerWithParams:@{@"className":@"MainViewControllerFifth",
-                                        @"title":@"我的",
+                                        @"navigationTitle":@"MainFifthVC",
+                                        @"tabBarTitle":@"我的",
                                         @"image":@"mine_icon",
                                         @"selectedImage":@"mineselet_icon"}];
     
@@ -65,10 +70,12 @@
     id vc = [[NSClassFromString(className) alloc]init];
     if ([vc isKindOfClass:[UIViewController class]]) {
         UIViewController *tempVC = vc;
-        //tempVC.title = params[@"title"];
-        tempVC.tabBarItem.title = params[@"title"];
+
+        tempVC.navigationItem.title = params[@"navigationTitle"];
+        tempVC.tabBarItem.title = params[@"tabBarTitle"];
         tempVC.tabBarItem.image = [UIImage imageNamed:params[@"image"]?:@""];
         tempVC.tabBarItem.selectedImage = [UIImage imageNamed:params[@"selectedImage"]?:@""];
+       
         
         UINavigationController *unc = [[UINavigationController alloc] initWithRootViewController:tempVC];
         
