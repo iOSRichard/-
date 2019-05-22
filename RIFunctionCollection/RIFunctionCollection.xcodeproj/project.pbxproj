@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		305745FBF60791C589E48A9E /* libPods-RIFunctionCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC72D4651528D5C3B22FA38 /* libPods-RIFunctionCollection.a */; };
 		799BFD9522929EAC00FBFC4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFD9422929EAC00FBFC4A /* AppDelegate.m */; };
-		799BFD9822929EAC00FBFC4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFD9722929EAC00FBFC4A /* ViewController.m */; };
 		799BFD9B22929EAC00FBFC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799BFD9922929EAC00FBFC4A /* Main.storyboard */; };
 		799BFD9D22929EAE00FBFC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799BFD9C22929EAE00FBFC4A /* Assets.xcassets */; };
 		799BFDA022929EAE00FBFC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799BFD9E22929EAE00FBFC4A /* LaunchScreen.storyboard */; };
@@ -22,6 +21,8 @@
 		799BFDD32292B38E00FBFC4A /* MainViewControllerThird.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD22292B38E00FBFC4A /* MainViewControllerThird.m */; };
 		799BFDD62292B3B600FBFC4A /* MainViewControllerFourth.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD52292B3B600FBFC4A /* MainViewControllerFourth.m */; };
 		799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */; };
+		799BFDDE22952EEB00FBFC4A /* RIToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDDD22952EEB00FBFC4A /* RIToolClass.m */; };
+		799BFDE122953D9600FBFC4A /* RIPreservableBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDE022953D9500FBFC4A /* RIPreservableBaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,6 @@
 		799BFD9022929EAC00FBFC4A /* RIFunctionCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIFunctionCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799BFD9322929EAC00FBFC4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		799BFD9422929EAC00FBFC4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		799BFD9622929EAC00FBFC4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		799BFD9722929EAC00FBFC4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		799BFD9A22929EAC00FBFC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		799BFD9C22929EAE00FBFC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799BFD9F22929EAE00FBFC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +70,10 @@
 		799BFDD52292B3B600FBFC4A /* MainViewControllerFourth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerFourth.m; sourceTree = "<group>"; };
 		799BFDD72292B79E00FBFC4A /* MainViewControllerFifth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerFifth.h; sourceTree = "<group>"; };
 		799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerFifth.m; sourceTree = "<group>"; };
+		799BFDDC22952EEB00FBFC4A /* RIToolClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIToolClass.h; sourceTree = "<group>"; };
+		799BFDDD22952EEB00FBFC4A /* RIToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIToolClass.m; sourceTree = "<group>"; };
+		799BFDDF22953D9500FBFC4A /* RIPreservableBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIPreservableBaseModel.h; sourceTree = "<group>"; };
+		799BFDE022953D9500FBFC4A /* RIPreservableBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIPreservableBaseModel.m; sourceTree = "<group>"; };
 		D0FB9EC7ED93479055E23C40 /* Pods-RIFunctionCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIFunctionCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RIFunctionCollection/Pods-RIFunctionCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDCD8C2A939744105116CC6 /* Pods-RIFunctionCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIFunctionCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-RIFunctionCollection/Pods-RIFunctionCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,12 +129,12 @@
 		799BFD9222929EAC00FBFC4A /* RIFunctionCollection */ = {
 			isa = PBXGroup;
 			children = (
+				799BFDDB22952CB400FBFC4A /* Toolcomponents */,
+				799BFDDA22951D4B00FBFC4A /* CustomView */,
 				799BFDCA2292AF7400FBFC4A /* MainViewController */,
 				799BFDC62292A51400FBFC4A /* TabBarControllerGroup */,
 				799BFD9322929EAC00FBFC4A /* AppDelegate.h */,
 				799BFD9422929EAC00FBFC4A /* AppDelegate.m */,
-				799BFD9622929EAC00FBFC4A /* ViewController.h */,
-				799BFD9722929EAC00FBFC4A /* ViewController.m */,
 				799BFD9922929EAC00FBFC4A /* Main.storyboard */,
 				799BFD9C22929EAE00FBFC4A /* Assets.xcassets */,
 				799BFD9E22929EAE00FBFC4A /* LaunchScreen.storyboard */,
@@ -183,6 +186,24 @@
 				799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		799BFDDA22951D4B00FBFC4A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		799BFDDB22952CB400FBFC4A /* Toolcomponents */ = {
+			isa = PBXGroup;
+			children = (
+				799BFDDC22952EEB00FBFC4A /* RIToolClass.h */,
+				799BFDDD22952EEB00FBFC4A /* RIToolClass.m */,
+				799BFDDF22953D9500FBFC4A /* RIPreservableBaseModel.h */,
+				799BFDE022953D9500FBFC4A /* RIPreservableBaseModel.m */,
+			);
+			path = Toolcomponents;
 			sourceTree = "<group>";
 		};
 		C9F35C130D65A04357CA0873 /* Pods */ = {
@@ -384,14 +405,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				799BFDD02292B34100FBFC4A /* MainViewControllerTwo.m in Sources */,
+				799BFDDE22952EEB00FBFC4A /* RIToolClass.m in Sources */,
 				799BFDD62292B3B600FBFC4A /* MainViewControllerFourth.m in Sources */,
-				799BFD9822929EAC00FBFC4A /* ViewController.m in Sources */,
 				799BFDD32292B38E00FBFC4A /* MainViewControllerThird.m in Sources */,
 				799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */,
 				799BFDA322929EAE00FBFC4A /* main.m in Sources */,
 				799BFDCD2292B0B600FBFC4A /* MainViewControllerOne.m in Sources */,
 				799BFDC92292A5F700FBFC4A /* TabBarControllerOne.m in Sources */,
 				799BFD9522929EAC00FBFC4A /* AppDelegate.m in Sources */,
+				799BFDE122953D9600FBFC4A /* RIPreservableBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
