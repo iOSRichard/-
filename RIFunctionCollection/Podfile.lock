@@ -17,6 +17,7 @@ PODS:
   - Bugly (2.5.0)
   - FMDB/SQLCipher (2.7.5):
     - SQLCipher
+  - jastor (0.2.1)
   - MJRefresh (3.2.0)
   - SDAutoLayout (2.2.1)
   - SDWebImage (5.0.3):
@@ -27,13 +28,14 @@ PODS:
   - SQLCipher/common (4.1.0)
   - SQLCipher/standard (4.1.0):
     - SQLCipher/common
-  - SSZipArchive (2.2.1)
+  - SSZipArchive (2.2.2)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - AFNetworking
   - Bugly
   - FMDB/SQLCipher
+  - jastor (from `https://github.com/elado/jastor`, tag `0.2.1`)
   - MJRefresh
   - SDAutoLayout
   - SDWebImage
@@ -52,17 +54,28 @@ SPEC REPOS:
     - SSZipArchive
     - SVProgressHUD
 
+EXTERNAL SOURCES:
+  jastor:
+    :git: https://github.com/elado/jastor
+    :tag: 0.2.1
+
+CHECKOUT OPTIONS:
+  jastor:
+    :git: https://github.com/elado/jastor
+    :tag: 0.2.1
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  jastor: 8d7e4f321eb63cd5bd6e0fc41ada64fe89b84ff9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
   SQLCipher: efbdb52cdbe340bcd892b1b14297df4e07241b7f
-  SSZipArchive: 8e859da2520142e09166bc9161967db296e9d02f
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 96b0b34c0a2adf8875e82184be25dc74e3c5807e
+PODFILE CHECKSUM: 35ea203e2d46d84f1bb5affe2e53fc7100e2b7a1
 
 COCOAPODS: 1.5.3

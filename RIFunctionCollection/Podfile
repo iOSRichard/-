@@ -6,13 +6,20 @@ target 'RIFunctionCollection' do
   # use_frameworks!
 
   # Pods for RIFunctionCollection
+  
+  #source 'git@21.96.184.11:SHARE_IOS/cgbspec.git'
+  
   pod  'SDWebImage'
-  pod "AFNetworking"
-  pod "SVProgressHUD"
-  pod "MJRefresh"
-  pod "SDAutoLayout"
-  pod 'Bugly'
-  pod 'FMDB/SQLCipher'
-  pod 'SSZipArchive'
-  pod 'FMDB/SQLCipher'
+  pod  'AFNetworking'
+  pod  'SVProgressHUD'
+  pod  'MJRefresh'
+  pod  'SDAutoLayout'
+  pod  'Bugly'
+  pod  'FMDB/SQLCipher'
+  pod  'SSZipArchive'
+  pod  'FMDB/SQLCipher'
+  pod  'jastor', :git => 'https://github.com/elado/jastor', :tag => '0.2.1'
 end
+
+
+

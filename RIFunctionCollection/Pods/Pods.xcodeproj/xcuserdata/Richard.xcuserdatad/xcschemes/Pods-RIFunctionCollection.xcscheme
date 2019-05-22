@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B88652DE016A22869FD82948075F64B4"
+               BlueprintIdentifier = "81B536B18B5F833E9EE854ED974EAAA3"
                BlueprintName = "Pods-RIFunctionCollection"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-RIFunctionCollection.a">

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E81B79AEBA0D626A0F13F3D935F715F3"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "84CA63E8332EEEA412061FCEB8C6B163"
+               BlueprintName = "jastor"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libSDWebImage.a">
+               BuildableName = "libjastor.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
