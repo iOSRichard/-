@@ -23,6 +23,7 @@
 		799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDD82292B79E00FBFC4A /* MainViewControllerFifth.m */; };
 		799BFDDE22952EEB00FBFC4A /* RIToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDDD22952EEB00FBFC4A /* RIToolClass.m */; };
 		799BFDE122953D9600FBFC4A /* RIPreservableBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDE022953D9500FBFC4A /* RIPreservableBaseModel.m */; };
+		799BFDE422963C5000FBFC4A /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFDE322963C5000FBFC4A /* UserInfoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		799BFDDD22952EEB00FBFC4A /* RIToolClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIToolClass.m; sourceTree = "<group>"; };
 		799BFDDF22953D9500FBFC4A /* RIPreservableBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIPreservableBaseModel.h; sourceTree = "<group>"; };
 		799BFDE022953D9500FBFC4A /* RIPreservableBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RIPreservableBaseModel.m; sourceTree = "<group>"; };
+		799BFDE222963C5000FBFC4A /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		799BFDE322963C5000FBFC4A /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		D0FB9EC7ED93479055E23C40 /* Pods-RIFunctionCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIFunctionCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RIFunctionCollection/Pods-RIFunctionCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		FEDCD8C2A939744105116CC6 /* Pods-RIFunctionCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RIFunctionCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-RIFunctionCollection/Pods-RIFunctionCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +205,8 @@
 				799BFDDD22952EEB00FBFC4A /* RIToolClass.m */,
 				799BFDDF22953D9500FBFC4A /* RIPreservableBaseModel.h */,
 				799BFDE022953D9500FBFC4A /* RIPreservableBaseModel.m */,
+				799BFDE222963C5000FBFC4A /* UserInfoModel.h */,
+				799BFDE322963C5000FBFC4A /* UserInfoModel.m */,
 			);
 			path = Toolcomponents;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				799BFDD32292B38E00FBFC4A /* MainViewControllerThird.m in Sources */,
 				799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */,
 				799BFDA322929EAE00FBFC4A /* main.m in Sources */,
+				799BFDE422963C5000FBFC4A /* UserInfoModel.m in Sources */,
 				799BFDCD2292B0B600FBFC4A /* MainViewControllerOne.m in Sources */,
 				799BFDC92292A5F700FBFC4A /* TabBarControllerOne.m in Sources */,
 				799BFD9522929EAC00FBFC4A /* AppDelegate.m in Sources */,

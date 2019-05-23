@@ -138,8 +138,8 @@
     }
 }
 
-#pragma mark -- 模型保存在本地
-+ (void)setObject:(nullable id)value forKey:(NSString *)key{
+#pragma mark -- 模型保存
++ (void)setModel:(nullable id)value forKey:(NSString *)key{
     @try {
         
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:value];
@@ -152,11 +152,12 @@
     }
 }
 
-+ (nullable id)objectForKey:(NSString *)key{
+#pragma mark -- 获取内存模型
++ (nullable id)modelForKey:(NSString *)key{
     @try {
         
         NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-        RIPreservableBaseModel *model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        id model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         return model;
     } @catch (NSException *exception) {
         NSString *exceptionStr = [NSString stringWithFormat:@"%@:setObject方法:%@",NSStringFromClass([self class]),exception];
@@ -166,6 +167,75 @@
     }
     
 }
+
+#pragma mark -- 模型数组保存
++ (void)setModelArray:(NSArray *)value forKey:(NSString *)key{
+    NSMutableArray *dataArr = [NSMutableArray array];
+    for (id model in value) {
+        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:model];
+        [dataArr addObject:data];
+    }
+    NSUserDefaults *userdafault = [NSUserDefaults standardUserDefaults];
+    [userdafault setObject:[NSArray arrayWithArray:dataArr] forKey:key];
+    [userdafault synchronize];
+}
+
+#pragma mark -- 获取模型数组
++ (nullable id)modelArrayForKey:(NSString *)key{
+    NSUserDefaults *userdafault = [NSUserDefaults standardUserDefaults];
+    NSArray *dataArr = [userdafault objectForKey:key];
+    NSMutableArray *arr = [NSMutableArray array];
+    for (NSData *data in dataArr) {
+        id model = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        [arr addObject:model];
+    }
+    return arr;
+}
+
+#pragma mark -- 字典数组转模型数组保存
++ (void)setModelArrayWithArrayDict:(NSArray *)value forKey:(NSString *)key{
+    
+    NSMutableArray *modelArray = [NSMutableArray array];
+    
+    for (NSDictionary *dict in value) {
+        @try {
+            id model = [[self alloc]initModelWithJsonDict:dict];
+            
+            [modelArray addObject:model];
+            
+        } @catch (NSException *exception) {
+            NSLog(@"%@:setModelArrayWithArrayDict方法:%@",NSStringFromClass([self class]),exception);
+        } @finally {
+            
+            [self setModelArray:modelArray forKey:key];
+        }
+       
+    }
+    
+    
+}
+
+#pragma mark -- 更新模型数据
++ (void)replaceModelData:(NSUInteger)index withObject:(nullable id)value forModelArrayKey:(NSString *)key{
+    NSArray *dataArray = [self modelArrayForKey:key];
+    NSMutableArray *array = dataArray.mutableCopy;
+    NSNumber *num = [NSNumber numberWithUnsignedInteger:index];
+    NSInteger integer = [num intValue]+1;
+    
+    if (integer <= 0) {
+        NSLog(@"%@:modifyModelArrayData方法:模型数据为%@",NSStringFromClass([self class]),dataArray);
+        return;
+    }
+    
+    if (dataArray.count > 0 && integer <= dataArray.count) {
+        [array replaceObjectAtIndex:index withObject:value];
+        [self setModelArray:array.copy forKey:key];
+    }else{
+        NSLog(@"%@:modifyModelArrayData方法:模型数据为%@",NSStringFromClass([self class]),dataArray);
+    }
+}
+
+
 
 
 //#pragma mark - json转model另外一种方式
