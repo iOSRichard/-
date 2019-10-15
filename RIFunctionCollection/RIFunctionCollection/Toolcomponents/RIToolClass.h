@@ -12,8 +12,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RIToolClass : NSObject
-
+//获取到当前所在的视图
 + (UIViewController *)currentPresentingVC;
+//定位是否允许
++ (BOOL)authPermission;
+//获取手机型号
++(NSString *)getIphoneType;
+//是否iPhoneX系列
++ (BOOL)isIPhoneXSeries;
+
 
 
 

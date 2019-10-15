@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		305745FBF60791C589E48A9E /* libPods-RIFunctionCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC72D4651528D5C3B22FA38 /* libPods-RIFunctionCollection.a */; };
+		796FF7CC22BE19480019144E /* CGBScreenBlurry.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FF7CB22BE19480019144E /* CGBScreenBlurry.m */; };
+		796FF7CF22BE19730019144E /* UIImage+CGBBlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FF7CD22BE19730019144E /* UIImage+CGBBlurGlass.m */; };
 		799BFD9522929EAC00FBFC4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 799BFD9422929EAC00FBFC4A /* AppDelegate.m */; };
 		799BFD9B22929EAC00FBFC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799BFD9922929EAC00FBFC4A /* Main.storyboard */; };
 		799BFD9D22929EAE00FBFC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799BFD9C22929EAE00FBFC4A /* Assets.xcassets */; };
@@ -45,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		1CC72D4651528D5C3B22FA38 /* libPods-RIFunctionCollection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RIFunctionCollection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FF7CA22BE19480019144E /* CGBScreenBlurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGBScreenBlurry.h; sourceTree = "<group>"; };
+		796FF7CB22BE19480019144E /* CGBScreenBlurry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGBScreenBlurry.m; sourceTree = "<group>"; };
+		796FF7CD22BE19730019144E /* UIImage+CGBBlurGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGBBlurGlass.m"; sourceTree = "<group>"; };
+		796FF7CE22BE19730019144E /* UIImage+CGBBlurGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGBBlurGlass.h"; sourceTree = "<group>"; };
 		799BFD9022929EAC00FBFC4A /* RIFunctionCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIFunctionCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799BFD9322929EAC00FBFC4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		799BFD9422929EAC00FBFC4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -201,6 +207,10 @@
 		799BFDDB22952CB400FBFC4A /* Toolcomponents */ = {
 			isa = PBXGroup;
 			children = (
+				796FF7CE22BE19730019144E /* UIImage+CGBBlurGlass.h */,
+				796FF7CD22BE19730019144E /* UIImage+CGBBlurGlass.m */,
+				796FF7CA22BE19480019144E /* CGBScreenBlurry.h */,
+				796FF7CB22BE19480019144E /* CGBScreenBlurry.m */,
 				799BFDDC22952EEB00FBFC4A /* RIToolClass.h */,
 				799BFDDD22952EEB00FBFC4A /* RIToolClass.m */,
 				799BFDDF22953D9500FBFC4A /* RIPreservableBaseModel.h */,
@@ -416,7 +426,9 @@
 				799BFDD92292B79E00FBFC4A /* MainViewControllerFifth.m in Sources */,
 				799BFDA322929EAE00FBFC4A /* main.m in Sources */,
 				799BFDE422963C5000FBFC4A /* UserInfoModel.m in Sources */,
+				796FF7CF22BE19730019144E /* UIImage+CGBBlurGlass.m in Sources */,
 				799BFDCD2292B0B600FBFC4A /* MainViewControllerOne.m in Sources */,
+				796FF7CC22BE19480019144E /* CGBScreenBlurry.m in Sources */,
 				799BFDC92292A5F700FBFC4A /* TabBarControllerOne.m in Sources */,
 				799BFD9522929EAC00FBFC4A /* AppDelegate.m in Sources */,
 				799BFDE122953D9600FBFC4A /* RIPreservableBaseModel.m in Sources */,
